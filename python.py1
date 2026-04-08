@@ -1,0 +1,57 @@
+My_list=[]
+while true:
+  print("\n--Menu--")
+  print("1.Append element")
+  print("2.insert element")
+  print("3.Remove element")
+  print("4.Display length")
+  print("5.pop element")
+  print("6.clear list")
+  print("7.Display list")
+  print("8.Exit)
+  choice=int(input("enter your choice"))
+  if choice==1:
+    val=int(input("enter element to Append"))
+    My_list.append(val)
+    print("updated list:",My_list)
+
+  elif choice==2
+   val=int(input("enter element to insert"))
+   pos=int(input("enter position(index):))
+   My_list.insert(pos,val)
+   print("Updated list:",My_list)
+
+elif choice==3
+    val=int(input("enter element to remove:"))
+    if val in My_list:
+      My_list.remove(val)
+      print("Updated list:",My_list)
+    else:
+      print("element not found!")
+
+elif choice==4:
+    print("Length of list:",len(My_list))
+
+elif choice==5:
+    if len(My_list)>0:
+      print("Popped element:",My_list.pop())
+      print("updated list:",My_list)
+    else:
+      print("list is empty")
+
+elif choice==6:
+   My_list.clear()
+   print("List cleard")
+
+elif choice==7:
+   print("current list:",My_list)
+
+elif choice==8:
+   print("exiting program")
+   break
+
+else:
+  print("Invalid choice! try again.")
+  
+
+
